@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            background-color: rgb(135, 206, 235);
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        article p:first-child {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        article p:nth-child(2) {
+            color: initial;
+        }
+
+        article p:last-child {
+            color: red;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        ul li {
+            background-color: gray;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: white;
+        }
+
+        ul li:first-child, ul li:last-child {
+            font-size: 22px;
+        }
+
+        ul li:nth-last-child(3) {
+            background-color: pink;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <article>
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <p>This is the third paragraph.</p>
+    </article>
 
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+        <li>Fifth item</li>
+    </ul>
 </body>
-
 </html>
+
